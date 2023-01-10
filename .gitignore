@@ -5,3 +5,5 @@ bin/**
 .project
 .idea/**
 spring-boot-profile.iml
+/target/
+.classpath
