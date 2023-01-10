@@ -19,4 +19,9 @@ public class WeatherController {
 	public String getStudentDetails() {
 		return rainingDayService.forecast();
 	}
+	
+	@GetMapping("/sunnyDay")
+	public String getWeatherDetails() {
+		return sunnyDayService.forecast();
+	}
 }
