@@ -20,7 +20,7 @@ public class WeatherController {
 		return rainingDayService.forecast();
 	}
 	
-	@GetMapping("/get")
+	@GetMapping("/getDetails")
 	public String getWeatherDetails() {
 		System.out.println("this is in demo file");
 		return sunnyDayService.forecast();
