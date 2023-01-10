@@ -25,4 +25,9 @@ public class WeatherController {
 		System.out.println("this is in demo file");
 		return sunnyDayService.forecast();
 	}
+
+	@GetMapping("/secondFunction")
+	public String demo(){
+		return "this is demo";
+	}
 }
