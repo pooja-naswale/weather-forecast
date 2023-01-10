@@ -13,10 +13,13 @@ public class WeatherController {
 	private RainingDayService rainingDayService;
 
 	@Autowired
+	private CloudyDayService cloudyDayService;
+
+	@Autowired
 	private SunnyDayService sunnyDayService;
 
 	@GetMapping("/checkWeather")
 	public String getStudentDetails() {
-		return rainingDayService.forecast();
+		return cloudyDayService.forecast();
 	}
 }
