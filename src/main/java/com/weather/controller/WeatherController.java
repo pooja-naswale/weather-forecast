@@ -26,8 +26,15 @@ public class WeatherController {
 		return sunnyDayService.forecast();
 	}
 
+
 	@GetMapping("/secondFunction")
 	public String demo(){
 		return "this is demo";
+	}
+	
+	@GetMapping("getAnyNumder")
+	public int getNumber() {
+		return 1008;
+
 	}
 }
